@@ -22,10 +22,10 @@ import menu_information.LoginEnterListener;
 
 
 public class LoginFrame extends JFrame {
-Application app = new Application();
-public static String id_str = "";
 
+	public static String id_str = "";
 	public LoginFrame() {
+		Application app = new Application();
 		// 로그인 창 세팅
 		setBounds(750, 150, 300, 200);
 		setTitle("로그인 정보");
@@ -79,9 +79,9 @@ public static String id_str = "";
 				if(login_tf.getText().equals("0987654321")) {
 					if(login_pw.getText().equals("9999")) {
 						isCheck = false;
+						id_str = "관리자";
 						MenuFrame mf = new MenuFrame();
 						dispose();
-						id_str = "관리자";
 					}
 				}
 				
@@ -89,7 +89,7 @@ public static String id_str = "";
 					if (lui.getUserInfo()[i].getId().equals(login_tf.getText())) {
 						if (lui.getUserInfo()[i].getPw().equals(login_pw.getText())) {
 							//new MenuFrame();
-							id_str =login_tf.getText().trim();
+							id_str = login_tf.getText().trim();
 							MenuFrame mf = new MenuFrame();
 							dispose();
 							isCheck = false;

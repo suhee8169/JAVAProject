@@ -38,13 +38,12 @@ public class MenuFrame extends JFrame{
 		JLabel mitt = new JLabel(mit);
 		mitt.setBounds(0, 15, 500, 420);
 		
-		
-		//btn3.setEnabled(true);
+		System.out.println(LoginFrame.id_str);
 		if(LoginFrame.id_str.equals("관리자")) {
 			btn3.setEnabled(true);
-		}else {
+		}
+		else {
 			btn3.setEnabled(false);
-			//System.out.println("왜 여기로?");
 		}
 		
 		btn2.addActionListener(new ActionListener() {
