@@ -56,7 +56,7 @@ public class BoardList extends JFrame implements MouseListener{
 
 		String[][] data2 = new String[(int)file.list().length][3]; 
 		
-			System.out.println(file.list().length);
+		System.out.println(file.list().length);
 		
 		for(int i = 0; i<data2.length; i++) {
 			System.out.println(file.list()[i]);			
