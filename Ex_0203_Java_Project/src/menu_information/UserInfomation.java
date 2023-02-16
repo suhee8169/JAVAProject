@@ -1,4 +1,4 @@
-package menu_information;
+	package menu_information;
 
 import java.io.Serializable;
 

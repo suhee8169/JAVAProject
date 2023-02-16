@@ -18,7 +18,7 @@ public class MenuFrame extends JFrame{
 	public MenuFrame () {
 	
 		setLayout(null);
-		setBounds(750, 150, 700, 470);
+		setBounds(750, 150, 700, 475);
 		
 		JButton btn1 = new JButton("공  지  사  항");
 		JButton btn2 = new JButton("학  생  정  보");
@@ -26,16 +26,16 @@ public class MenuFrame extends JFrame{
 		JButton btn4 = new JButton("수  강  신  청");
 		JButton btn5 = new JButton("오 늘 의  학 식");
 		
-		btn1.setBounds(520, 0, 160, 85);
-		btn2.setBounds(520, 85, 160, 85);
-		btn3.setBounds(520, 170, 160, 85);
-		btn4.setBounds(520, 255, 160, 85);
-		btn5.setBounds(520, 340, 160, 85);
+		btn1.setBounds(520, 0, 175, 90);
+		btn2.setBounds(520, 90, 175, 90);
+		btn3.setBounds(520, 180, 175, 90);
+		btn4.setBounds(520, 270, 175, 90);
+		btn5.setBounds(520, 360, 175, 90);
 		
 		ImageIcon mit = new ImageIcon("KakaoTalk_20230214_120135682.jpg.png");
 		
 		JLabel mitt = new JLabel(mit);
-		mitt.setBounds(0, 0, 500, 420);
+		mitt.setBounds(0, 15, 500, 420);
 		
 		btn2.addActionListener(new ActionListener() {
 			
