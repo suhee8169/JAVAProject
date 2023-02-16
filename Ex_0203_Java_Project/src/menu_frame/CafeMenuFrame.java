@@ -596,7 +596,7 @@ public class CafeMenuFrame extends JFrame {
 		} // for
 
 		for (int i = 0; i < hm4_drink_ice2.size(); i++) {
-			btn4[i].addActionListener(new CafeButtonClickListener(i, hm4_drink_ice2, content_lb, totalprice_lb));
+			btn4_2[i].addActionListener(new CafeButtonClickListener(i, hm4_drink_ice2, content_lb, totalprice_lb));
 			total_price += hm4_drink_ice2.get(i).getPrice();
 		} // for
 

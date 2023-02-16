@@ -84,36 +84,36 @@ public class BoardList extends JFrame implements MouseListener{
 		
 		
 		
-		String path = "board\\save.txt";
+//		String path = "board\\save.txt";
 
 
-		try {
-			FileReader fr = new FileReader(path);
-			BufferedReader br = new BufferedReader(fr);
-
-			String ss = "";
-			String[] lines = null;
-
-			try {
-				fr = new FileReader(path);
-				br = new BufferedReader(fr);
-				
-				int cnt = 0;
-				lines = new String[5];
-				while( (ss  = br.readLine()) != null) {
-
-					lines[cnt++] = ss;
-	
-				}
-
-			}catch (Exception e) {
-				e.printStackTrace();
-			}
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		
-		}
+//		try {
+//			FileReader fr = new FileReader(path);
+//			BufferedReader br = new BufferedReader(fr);
+//
+//			String ss = "";
+//			String[] lines = null;
+//
+//			try {
+//				fr = new FileReader(path);
+//				br = new BufferedReader(fr);
+//				
+//				int cnt = 0;
+//				lines = new String[5];
+//				while( (ss  = br.readLine()) != null) {
+//
+//					lines[cnt++] = ss;
+//	
+//				}
+//
+//			}catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		
+//		}
 
 
 		listPanel = new JPanel();

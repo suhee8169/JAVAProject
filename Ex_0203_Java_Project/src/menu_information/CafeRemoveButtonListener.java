@@ -9,10 +9,12 @@ public class CafeRemoveButtonListener implements ActionListener {
 	
 	JLabel[] content_lb;
 	JLabel totalPrice_lb;
+	CafeButtonClickListener cbcl;
 	
 	public CafeRemoveButtonListener(JLabel[] content_lb, JLabel totalPrice_lb) {
 		this.content_lb = content_lb;
 		this.totalPrice_lb = totalPrice_lb;
+//		this.cbcl = cbcl;
 	} // end of constructor
 	
 	@Override
@@ -24,6 +26,7 @@ public class CafeRemoveButtonListener implements ActionListener {
 			}
 			
 		} // for
+		cbcl.count = 0;
 		totalPrice_lb.setText("รั : 0ฟ๘");
 		totalPrice_lb.repaint();
 	}

@@ -35,7 +35,7 @@ public class CafeButtonClickListener implements ActionListener {
 		for(int i=0; i<content_lb.length/3; i++) {
 			if(content_lb[i*3].getText().equals(" ") || content_lb[i*3].getText() == null) {
 				content_lb[i*3].setText(hm_coffee.get(key).getName());
-				content_lb[i*3+1].setText(Integer.toString(count)+"°³");
+				content_lb[i*3+1].setText(Integer.toString(count = 1)+"°³");
 				content_lb[i*3+2].setText(Integer.toString(hm_coffee.get(key).getPrice()) + "¿ø");
 				content_lb[i*3].repaint();
 				content_lb[i*3+1].repaint();

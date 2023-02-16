@@ -60,7 +60,7 @@ public class ThisWeekMenu {
 	// ÇÐ¿ø
 //	String path = ProjectMyPath.path + "Ex_0203_Java_Project/src/menu_information/menuFile/";
 	// Áý
-	String path = ProjectMyPath.path + "\\Ex_0203_Java_Project\\src\\menu_information\\menuFile" + "/";
+	String path = "menuFile" + "/";
 	
 	
 	File file = new File(path);
