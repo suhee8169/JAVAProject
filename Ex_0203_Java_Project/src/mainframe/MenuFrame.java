@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 import board.BoardList;
 import classapp.FrameClass;
 import mainframe.Grade2.TableEvent;
+import menu_frame.LoginFrame;
 
 public class MenuFrame extends JFrame{
 	public MenuFrame () {
@@ -36,6 +37,15 @@ public class MenuFrame extends JFrame{
 		
 		JLabel mitt = new JLabel(mit);
 		mitt.setBounds(0, 15, 500, 420);
+		
+		
+		//btn3.setEnabled(true);
+		if(LoginFrame.id_str.equals("관리자")) {
+			btn3.setEnabled(true);
+		}else {
+			btn3.setEnabled(false);
+			//System.out.println("왜 여기로?");
+		}
 		
 		btn2.addActionListener(new ActionListener() {
 			

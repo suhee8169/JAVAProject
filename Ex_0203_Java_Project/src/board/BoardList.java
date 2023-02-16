@@ -24,6 +24,8 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import menu_frame.LoginFrame;
+
 public class BoardList extends JFrame implements MouseListener{
 
 	JTextField searchWindow;
@@ -157,6 +159,15 @@ public class BoardList extends JFrame implements MouseListener{
 		// 글쓰기버튼
 		writebtn = new JButton("글쓰기");
 		writebtn.setBounds(1125, 570, 80, 30);
+		
+
+		if(LoginFrame.id_str.equals("관리자")) {
+			writebtn.setEnabled(true);
+		}else {
+			writebtn.setEnabled(false);
+			
+		}
+		
 		writebtn.addActionListener(new ActionListener() {
 
 			@Override

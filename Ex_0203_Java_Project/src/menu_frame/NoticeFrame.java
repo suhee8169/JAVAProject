@@ -81,6 +81,15 @@ public class NoticeFrame {
 		btn1.setBounds(10, 220, 175, 30);
 		btn1.setFont(bt_font);
 		
+
+		if(LoginFrame.id_str.equals("°ü¸®ÀÚ")) {
+			btn1.setEnabled(true);
+		}else {
+			btn1.setEnabled(false);
+			
+		}
+		
+		
 		JButton btn2 = new JButton("´Ý±â");
 		btn2.setBounds(200, 220, 175, 30);
 		btn2.setFont(bt_font);

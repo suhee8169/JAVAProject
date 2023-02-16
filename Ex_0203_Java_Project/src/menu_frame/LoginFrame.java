@@ -75,6 +75,16 @@ public static String id_str = "";
 			public void actionPerformed(ActionEvent e) {
 				LoadUserInfo lui = new LoadUserInfo();
 				boolean isCheck = true;
+				
+				if(login_tf.getText().equals("0987654321")) {
+					if(login_pw.getText().equals("9999")) {
+						isCheck = false;
+						MenuFrame mf = new MenuFrame();
+						dispose();
+						id_str = "°ü¸®ÀÚ";
+					}
+				}
+				
 				for (int i = 0; i < lui.getUserInfo().length; i++) {
 					if (lui.getUserInfo()[i].getId().equals(login_tf.getText())) {
 						if (lui.getUserInfo()[i].getPw().equals(login_pw.getText())) {
